@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('');
     const [isPending, setIsPending] = useState(false);
     const history = useHistory();
 
@@ -44,12 +44,11 @@ const Create = () => {
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>  
                 <label>Blog author:</label>
-                <select
+                <textarea
+                    required
                     value={author}
-                    onChange={(e) => setAuthor(e.target.value)}>
-                    <option value="mario">mario</option>
-                    <option value="yoshi">yoshi</option>
-                </select>
+                    onChange={(e) => setAuthor(e.target.value)}>   
+                </textarea>
                 {!isPending && <button>Add blog</button>}
                 {isPending && <button disabled>Adding blog...</button>}
             </form>

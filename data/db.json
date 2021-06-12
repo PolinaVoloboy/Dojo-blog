@@ -17,6 +17,12 @@
       "body": "Hi",
       "author": "mario",
       "id": 3
+    },
+    {
+      "title": "React App",
+      "body": "React hi",
+      "author": "Polina",
+      "id": 4
     }
   ]
 }
