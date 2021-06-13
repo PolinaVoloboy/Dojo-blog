@@ -107,10 +107,9 @@ text-decoration: none;
 /* like */
 .send-like button{
   
-  margin-left: 70ch;
+  margin-left: 50ch;
   background: #f1356d;
   color: #fff;
-  border: 3;
   padding: 7px;
   border-radius: 6px;
   cursor: pointer;
